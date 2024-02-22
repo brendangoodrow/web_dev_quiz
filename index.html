@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <h1 id="topbar"><b>Product Management System</h1>
+      
+      
+  
+   <p class="form-instructions">Please fill out the form below to add a new product to the system. Make sure to provide the item code, title, description, select the appropriate category, and specify the price. All fields are required.</p>
+  
+    <form id="contactForm">
+        <input type="text" id="item_code" placeholder="Item Code" required>
+      
+        <input type="text" id="title" placeholder="Title" required>
+      
+      <textarea id="description" placeholder="Description" required></textarea>
+      
+        <select id="category" required>
+            <option value="">Select a Category</option>
+            <option value="new_york">Electronics</option>
+            <option value="los_angeles">Furniture</option>
+            <option value="chicago">Clothing</option>
+            <option value="houston">Books</option>
+        </select>
+      
+      <input type="text" id="price" placeholder="Price" required>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+      
+    <footer>2024 Product Management System. All rights reserved.</footer>
+      
+</body>
+</html>

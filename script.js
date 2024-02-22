@@ -46,9 +46,12 @@ function validateForm() {
 
     // Adding the paragraph element to the div element
     newDivElement.appendChild(newParagraphElement);
+  
+    var footer = document.querySelector('footer');
+    footer.parentNode.insertBefore(newDivElement, footer);
 
     // Adding the div element to the body of the html document
-    document.body.appendChild(newDivElement);
+    // document.body.appendChild(newDivElement);
 
     // Setting all the input boxes to blank after the submit button is pressed
     document.getElementById('item_code').value = '';
@@ -56,6 +59,7 @@ function validateForm() {
     document.getElementById('description').value = '';
     document.getElementById('category').value = '';
     document.getElementById('price').value = '';
+  
 
     return true;
 }

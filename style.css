@@ -65,7 +65,7 @@ button:hover {
 div {
   background-color: #fff;
   padding: 2px;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 footer {
@@ -75,6 +75,5 @@ footer {
   color: white;
   margin-top: auto;
   bottom: 0;
-  position: fixed;
   width: 100%
 }
